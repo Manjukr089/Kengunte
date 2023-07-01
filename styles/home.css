@@ -1,0 +1,139 @@
+body {
+    height: 100vh;
+    background-color: gold;
+    margin-left: 0px;
+}
+
+.homepage {
+    padding-top: 20px;
+    background-color: gold;
+}
+
+.homepage h1 {
+    text-align: center;
+}
+
+.home_inner {
+    display: inline-block;
+    margin: 8px;
+}
+
+.home_inner img {
+    /* flex-wrap: wrap; */
+    height: 300px;
+    width: 494px;
+    border-radius: 10px;
+}
+#marq img{
+    /* flex-wrap: wrap; */
+}
+
+.card {
+    transition: transform 0.8s ease;
+}
+
+.card:hover {
+    transform: rotateY(360deg);
+}
+@media screen and (max-width: 768px) {
+    .homepage {
+        /* padding-top: 270px; */
+    }
+    .home_inner img{
+        width: 350px;
+        /* margin-left: 10px; */
+    }
+    #marq img{
+        /* margin-top: 30px; */
+        width: 200px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home_inner img{
+        width:350px;
+        /* margin-left: 10px; */
+    }
+}
+
+
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s ease;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(98, 132, 199);
+    align-items: center;
+}
+
+.navbar a {
+    color: rgb(27, 25, 25);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.navbar.active {
+    top: 0;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: rgb(21, 20, 20);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    margin: 0px 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        background-color: rgba(170, 157, 157, 0.893);
+        color: black;
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+}
