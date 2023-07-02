@@ -113,9 +113,15 @@ input {
 }
 
 .navbar-links a {
-    margin: 0px 100px;
+    margin: 0px 80px;
+
 }
 
+@media only screen and (max-width:992px){
+    .navbar{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
