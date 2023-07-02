@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     background-color: gold;
-    margin-left: 0px;
+    margin: 0px;
 }
 
 .homepage {
@@ -14,7 +14,8 @@ body {
 }
 
 .home_inner {
-    display: inline-block;
+    /* flex-wrap: nowrap; */
+    /* display: inline-block; */
     margin: 8px;
 }
 
@@ -35,12 +36,19 @@ body {
 .card:hover {
     transform: rotateY(360deg);
 }
-@media screen and (max-width: 768px) {
-    .homepage {
-        /* padding-top: 270px; */
-    }
+
+@media only screen and (max-width:992px){
     .home_inner img{
-        width: 350px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+   
+    .home_inner img{
+        flex-wrap: wrap;
+        width: 100%;
         /* margin-left: 10px; */
     }
     #marq img{
@@ -50,7 +58,7 @@ body {
 }
 @media screen and (max-width: 600px) {
     .home_inner img{
-        width:350px;
+        width:100%;
         /* margin-left: 10px; */
     }
 }

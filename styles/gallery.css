@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     background-color: gold;
-    margin-left: 0px;
+    margin: 0px;
 
 }
 .gallery{
@@ -10,7 +10,7 @@ body {
 }
 .gallery img{
     flex: wrap;
-    /* margin: auto; */
+    margin: auto;
     height:400px;
     width:490px;
     margin: 2px;
@@ -19,14 +19,18 @@ body {
 .gallery img:hover{
     transform: scale(1.1);
 }
+@media only screen and (max-width:992px){
+  .gallery img{
+      flex-wrap: wrap;
+      width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
 .gallery img{
     margin: 5px;
     width: 100%;
 }
-.gallery{
-    /* margin-top:  300px; */
-}
+
 .gallery img:hover{
     transform: scale(1.1);
 }
